@@ -37,8 +37,8 @@ public class SearchController {
 
         } else {
             jobs = JobData.findByColumnAndValue(searchType, searchTerm);
-            model.addAttribute("title", "Jobs with " + "Search Term: " + searchTerm + columnChoices.get(searchTerm) );
-            model.addAttribute("title", "Jobs with " + "Search Type: "  + columnChoices.get(searchType) );
+            model.addAttribute("title", "Jobs with " + "Search Term: "  + columnChoices.get(searchType) + ": " +searchTerm);
+            /*model.addAttribute("title", "Jobs with " + "Search Type: "  + columnChoices.get(searchType) );*/
 
         }
 
